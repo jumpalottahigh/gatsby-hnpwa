@@ -6,11 +6,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "GatsbyJS",
-        short_name: "GatsbyJS",
+        name: "Gatsby HN PWA",
+        short_name: "Gatsby HN PWA",
         start_url: "/",
-        background_color: "#f7f0eb",
-        theme_color: "#a2466c",
+        background_color: "#69a3d4",
+        theme_color: "#0175d8",
         display: "minimal-ui",
         icons: [
           {

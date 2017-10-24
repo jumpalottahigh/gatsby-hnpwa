@@ -2,10 +2,10 @@ import React from 'react'
 
 const IndexPage = ( {data} ) => (
   <div>
-    <ul>
+    <ol>
       {data.allHnStory.edges.map(post =>
         (
-          <li>
+          <li key={post.node.id}>
             <div><strong>{post.node.title}</strong></div>
             <div><em>{post.node.by}</em></div>
             <a href={post.node.url} target="_blank" rel="noopener">{post.node.url}</a>
@@ -14,7 +14,7 @@ const IndexPage = ( {data} ) => (
           </li>
         )
       )}
-    </ul>
+    </ol>
   </div>
 )
 
