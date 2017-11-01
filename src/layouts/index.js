@@ -11,7 +11,7 @@ const Header = () => (
   <div
     style={{
       background: '#0175d8',
-      marginBottom: '1.45rem',
+      marginBottom: '1.45rem'
     }}
   >
     <div
@@ -27,37 +27,66 @@ const Header = () => (
         to="/"
         style={{
           color: 'white',
-          textDecoration: 'none',
+          textDecoration: 'none'
         }}
       >
-      <img style={{ height: '1rem', background: '#fff', marginRight: '0.5rem'}} src={logo} alt="Gatsby HN PWA" />
-      Gatsby HN
+        <img
+          style={{ height: '1rem', background: '#fff', marginRight: '0.5rem' }}
+          src={logo}
+          alt="Gatsby HN PWA"
+        />
+        Gatsby HN
       </Link>
-      <Link to ="/" style={{
-        color: 'white',
-        textDecoration: 'none',
-        marginLeft: '4rem'
-      }}>New</Link>
-      <Link to ="/" style={{
-        color: 'white',
-        textDecoration: 'none',
-        marginLeft: '2rem'
-      }}>Comments</Link>
-      <Link to ="/" style={{
-        color: 'white',
-        textDecoration: 'none',
-        marginLeft: '2rem'
-      }}>Show</Link>
-      <Link to ="/" style={{
-        color: 'white',
-        textDecoration: 'none',
-        marginLeft: '2rem'
-      }}>Ask</Link>
-      <Link to ="/" style={{
-        color: 'white',
-        textDecoration: 'none',
-        marginLeft: '2rem'
-      }}>Jobs</Link>
+      <Link
+        to="/"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          marginLeft: '4rem'
+        }}
+      >
+        New
+      </Link>
+      <Link
+        to="/"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          marginLeft: '2rem'
+        }}
+      >
+        Comments
+      </Link>
+      <Link
+        to="/"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          marginLeft: '2rem'
+        }}
+      >
+        Show
+      </Link>
+      <Link
+        to="/"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          marginLeft: '2rem'
+        }}
+      >
+        Ask
+      </Link>
+      <Link
+        to="/"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          marginLeft: '2rem'
+        }}
+      >
+        Jobs
+      </Link>
     </div>
   </div>
 )
@@ -68,7 +97,7 @@ const TemplateWrapper = ({ children }) => (
       title="Gatsby HN PWA"
       meta={[
         { name: 'description', content: 'Hacker news PWA with Gatsby' },
-        { name: 'keywords', content: 'hn, pwa, gatsby' },
+        { name: 'keywords', content: 'hn, pwa, gatsby' }
       ]}
     />
     <Header />
@@ -77,7 +106,7 @@ const TemplateWrapper = ({ children }) => (
         margin: '0 auto',
         maxWidth: 960,
         padding: '0px 1rem 1.5rem',
-        paddingTop: 0,
+        paddingTop: 0
       }}
     >
       {children()}
@@ -86,7 +115,7 @@ const TemplateWrapper = ({ children }) => (
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func
 }
 
 export default TemplateWrapper

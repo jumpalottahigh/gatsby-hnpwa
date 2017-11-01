@@ -1,7 +1,16 @@
 html {
-  font-family: Roboto, 'Segoe UI', Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Roboto, 'Segoe UI', Helvetica, Tahoma, Geneva, Verdana,
+    sans-serif;
 }
 
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
